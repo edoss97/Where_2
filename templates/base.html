@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><base href=""></title>
+    <link rel="stylesheet" href="/static/site.css"/>
+
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+          <a href="/homepage">
+            <img id="logo" src="static/1.png">
+            <a href="/list"><button class="nav-links">My Lists</button></a>
+            <a href="/destination"><button class="nav-links">View Destinations</button></a>
+            <a href="/homepage"><button class="nav-links">Homepage</button></a>
+        </div>
+    </nav>
+    {% block title %}
+    {% endblock %}
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

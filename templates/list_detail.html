@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% extends 'base.html' %}
+
+<body>
+    {% block body %}
+    <h2>{{ list.list_name}}</h2>
+    {% for destination in destinations %}
+    <a href="/destination/{{ destination.destination_id }}" >
+      <div  class="card-text-center">
+          <img class="destination-image" src="{{ destination.destination_url }}">
+             <h3 id="linked_dest_name"> {{ destination.destination_name }}  </h3>
+             <p></p>
+      
+        </a> 
+      </div>
+    {% endfor %}
+    <h2><a href="/destination">
+      Click Here to Add Destinations!
+    </a></h2>
+    {% endblock %}
+
+
+    
+</body>
+</html>

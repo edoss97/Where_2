@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>all destinations
+  </title>
+
+</head>
+{% extends 'base.html' %}
+{% block body %}
+<h1>All Destinations</h1>
+<br>
+
+<div id="destination-list">
+{% for destination in destinations %}
+ <a href="/destination/{{ destination.destination_id }}" >
+  <div  class="card-text-center">
+      <img class="destination-image" src="{{ destination.destination_url }}">
+         <h3 id="linked_dest_name"> {{ destination.destination_name }}  </h3>
+         <p></p>
+  
+    </a> 
+  </div>
+ {% endfor %}
+ <br>
+</div>
+{% endblock %}
+</body>

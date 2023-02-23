@@ -1,0 +1,276 @@
+*{
+  background-color: #c8eefa;
+  margin: 0%;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+}
+
+
+#dest_details img {
+    float: center;
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+}
+#destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.destination-image {
+    width: 250px;
+    height: 250px;
+    object-fit:cover;
+}
+
+.card-text-center {
+    background-color: #7fc9cb;
+    width: 20%;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+
+}
+#my_list_list {
+  width: auto;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center
+}
+.list-items{
+  text-decoration-color: #134668;
+  text-transform: capitalize;
+  font: bold;
+}
+
+ .destination-image{
+  background-color: #134668;
+}
+
+#linked_dest_name {
+    font-size: 20px;
+    color:#134668 ;
+    font-weight: bold;
+    background-color:#7fc9cb;
+}
+
+#new_list_input{
+  width: auto;
+}
+#logins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.top-nav{
+  background-color: #134668;
+
+}
+.nav-container{
+  background-color: #134668;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items:flex-end;
+  color: #fff;
+  padding: 20px 20px;
+  background-color: #134668;
+}
+.nav-links:hover {
+  color: #61b9c1;
+}
+
+
+#logo{
+  width: 105px;
+  height: 105px;
+
+}
+
+#logo-login{
+  width:200px;
+  height: 200px;
+
+}
+.logins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logins h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #134668;
+}
+
+.logins form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #134668;
+  border: none;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logins form p {
+  margin: 0;
+}
+
+.logins label {
+  font-size: 16px;
+  color: #7fc9cb;
+  margin-bottom: 5px;
+}
+
+.logins input[type="text"],
+.logins input[type="password"] {
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 20px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #7fc9cb;
+}
+
+.logins input[type="text"]::placeholder,
+.logins input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+.logins input[type="submit"] {
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logins input[type="submit"]:hover {
+  background-color: #cc0e11;
+}
+
+.logins .signup-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.logins .signup-link a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.logins .signup-link a:hover {
+  text-decoration: underline;
+}
+
+.list-items {
+  background-color: #7fc9cb;
+  width: 30%;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  margin: auto;
+}
+#greeting {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#greeting h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+#greeting h2 {
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+#homepage-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#homepage-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#homepage-buttons button:hover {
+  background-color: #3e8e41;
+}
+select[name="add_dest"] {
+  font-size: 18px;
+  padding: 8px;
+}
+input[type="submit"][value="Add to your list"] {
+  background-color: #28a745;
+}
+
+#rating_dropdown {
+  font-size: 18px;
+  padding: 8px;
+  margin-right: 10px;
+}
+#dest_details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#dest-det-img {
+  width: 500px;
+  height: auto;
+  margin-top: 20px auto;
+  align-items: center;
+  text-align: center;
+}
+#title-dest {
+  text-align: center;
+}

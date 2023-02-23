@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+</head>
+{% extends 'base.html' %}
+
+<body>
+    <div id="dest_details">
+    
+ 
+        {% block body %}
+        <h1 id="title-dest" >{{ destination.destination_name }}</h1>
+        <h2>Destination Rating: {{ average_rating }}</h2>
+
+        <img id="dest-det-img" src="{{ destination.destination_url }}">
+        <p>
+        {{ destination.destination_description }}
+        </p>
+    </div>
+    <div id="dest-form" ></div>
+        <p> <label for="dest_ratings">Choose a rating:</label>
+        <form action="/destination/ratings/{{ destination.destination_id }}" method="post">
+            <select id="rating_dropdown" name = "rating">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            </select></p>
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+        </form>
+        <p> <label for="add_destinations">Would you like to add this to a list?</label>
+        <form action="add/{{ destination.destination_id }}" method = "post">
+            <select name="add_dest">
+            <p>{% for name in lists %}
+                <option value="{{ name.list_id }}">"{{ name.list_name }}"</option>
+            {% endfor %}
+            </select>
+            <input type="submit" value="Add to your list">
+        </p>
+        </form>
+    {% endblock %}
+            
+    </body>
+</html>
