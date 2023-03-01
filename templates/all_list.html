@@ -22,13 +22,12 @@
 <div> <a class="list-items" href="/list/{{ list.list_id }}">
        <h3 id="linked_list_name"> {{ list.list_name }}  </h3>
        <p></p>
-
   </a> 
 </div>
 
 
 {% endfor %}
-    <form action="/new_list" method="POST">
+    <form id="new_list_form" action="/new_list" method="POST">
     <h2>Create New list</h2>
         <p>
             New List Name: <input id="new_list_input" type ="text" name = "list_name">

@@ -10,17 +10,21 @@
 
 <body>
     {% block body %}
-    <h2>{{ list.list_name}}</h2>
+    <h2 id="list_title">{{ list.list_name}}</h2>
+    <div id="list_dest_items">
     {% for destination in destinations %}
     <a href="/destination/{{ destination.destination_id }}" >
       <div  class="card-text-center">
           <img class="destination-image" src="{{ destination.destination_url }}">
              <h3 id="linked_dest_name"> {{ destination.destination_name }}  </h3>
-             <p></p>
-      
         </a> 
+        <!-- <form action="/delete_dest" method="post">
+            <input type="hidden" name="dest_id" value="{{ destination.destination_id }}" >
+          <button type="submit">DELETE</button> -->
+        </form>
       </div>
     {% endfor %}
+    </div>
     <h2><a href="/destination">
       Click Here to Add Destinations!
     </a></h2>

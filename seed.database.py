@@ -22,7 +22,6 @@ with server.app.app_context():
             destination["destination_url"],
             destination["destination_description"]
         )
-    
         db_destination = crud.create_dest(destination_name,destination_url,destination_description)
         destinations_in_db.append(db_destination)
 

@@ -139,6 +139,24 @@ def new_list():
     db.session.commit()
     return redirect(f"/list") 
 
+# @app.route("/update_list", methods=["POST"])
+# def update_list():
+#     list_id=request.form
+
+
+#     crud.update_list(list_id, updated_name)
+#     db.session.commit()
+#     return "updated"
+
+# @app.route("/delete_dest", methods=["POST"])
+# def delete_dest():
+#     dest_id= request.form.get('dest_id')
+#     logged_in_user_id = session.get("user_id")
+#     print(logged_in_user_id, dest_id)
+#     Destination= crud.delete_dest(logged_in_user_id, dest_id)
+#     db.session.delete(Destination)
+#     db.session.commit()
+
 if __name__ == "__main__":
     connect_to_db(app)
     app.run(host="localhost",port = 3001, debug=True)

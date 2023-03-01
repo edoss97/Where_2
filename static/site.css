@@ -5,17 +5,29 @@
 body {
   font-family: Arial, sans-serif;
 }
-
-h1, h2 {
-  font-family: Georgia, serif;
+select{
+  background-color: white;
 }
-
+h1, h2, p {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+form{
+  text-align: center;
+}
 
 #dest_details img {
     float: center;
     width:  500px;
     height: 500px;
     object-fit: cover;
+}
+
+#dest_details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 #destination-list {
     display: flex;
@@ -41,20 +53,8 @@ h1, h2 {
     margin: 5px;
 
 }
-#my_list_list {
-  width: auto;
-  border-radius: 10px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center
-}
-.list-items{
-  text-decoration-color: #134668;
-  text-transform: capitalize;
-  font: bold;
-}
+
+
 
  .destination-image{
   background-color: #134668;
@@ -64,7 +64,7 @@ h1, h2 {
     font-size: 20px;
     color:#134668 ;
     font-weight: bold;
-    background-color:#7fc9cb;
+  background-color: #7fc9cb;
 }
 
 #new_list_input{
@@ -200,15 +200,9 @@ h1, h2 {
 }
 
 .list-items {
-  background-color: #7fc9cb;
-  width: 30%;
-  padding: 50px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
   text-decoration: none;
-  border-radius: 100px;
   margin: auto;
+  text-align: center;
 }
 #greeting {
   margin: 50px 0;
@@ -240,7 +234,6 @@ h1, h2 {
   color: #fff;
   cursor: pointer;
 }
-
 #homepage-buttons button:hover {
   background-color: #3e8e41;
 }
@@ -257,20 +250,15 @@ input[type="submit"][value="Add to your list"] {
   padding: 8px;
   margin-right: 10px;
 }
-#dest_details {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+#list_title{
   text-align: center;
 }
-
-#dest-det-img {
-  width: 500px;
-  height: auto;
-  margin-top: 20px auto;
-  align-items: center;
-  text-align: center;
+#list_dest_items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
-#title-dest {
+#new_list_form{
   text-align: center;
 }

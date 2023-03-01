@@ -58,6 +58,13 @@ def get_list_by_user_id(user_id):
 def get_avg_rating(destination_id):
     return Rating.query.filter_by(destination_id=destination_id).all()
 
+def update_list(list_id, new_list_name):
+    list=List.query.get(list_id)
+    list.name = new_list_name
+
+# def delete_dest(user_id, destination_id):
+#     destination=List_Dest.query.filter_by(user_id=user_id, destination_id=destination_id).first()
+#     return destination
 
 if __name__ == '__main__':
     from server import app

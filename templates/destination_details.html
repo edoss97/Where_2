@@ -9,10 +9,11 @@
 {% extends 'base.html' %}
 
 <body>
+    {% block body %}
     <div id="dest_details">
     
  
-        {% block body %}
+        
         <h1 id="title-dest" >{{ destination.destination_name }}</h1>
         <h2>Destination Rating: {{ average_rating }}</h2>
 
